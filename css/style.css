@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --pink: #ff6b9d;
+  --mint: #7bd389;
+  --lavender: #b388ff;
+  --yellow: #ffd93d;
+  --sky: #80d8ff;
+  --dark: #311b92;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 40%, #e8eaf6 100%);
+  min-height: 100vh;
+  padding: 30px 20px;
+  color: var(--dark);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 107, 157, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(179, 136, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(123, 211, 137, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5rem;
+  color: var(--dark);
+  text-shadow: 3px 3px 0 var(--pink), 6px 6px 0 rgba(255, 107, 157, 0.2);
+  margin-bottom: 15px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #7c4dff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  color: #9575cd;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+#ejercicios-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.seccion {
+  margin-bottom: 50px;
+}
+
+.seccion-titulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px dashed var(--lavender);
+}
+
+.seccion-nombre {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.seccion-contador {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  color: var(--lavender);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 20px 20px;
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 3px solid var(--dark);
+  box-shadow: 6px 6px 0 0 var(--dark);
+}
+
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 0 var(--dark);
+}
+
+.card:active {
+  transform: translate(1px, 1px);
+  box-shadow: 3px 3px 0 0 var(--dark);
+}
+
+.card-number {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  background: var(--pink);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 12px;
+  align-self: flex-start;
+  border: 2px solid var(--dark);
+  box-shadow: 2px 2px 0 0 var(--dark);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  background: var(--dark);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.15s ease;
+  border: 2px solid var(--dark);
+  box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  background: #4527a0;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+}
+
+.btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 16px;
+  border: 3px dashed var(--lavender);
+  color: #9575cd;
+}
+
+.empty-state h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Exercise page styles */
+.exercise-page {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  border: 3px solid var(--dark);
+  box-shadow: 6px 6px 0 0 var(--dark);
+  position: relative;
+  z-index: 1;
+}
+
+.back-link {
+  display: inline-block;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: var(--dark);
+  text-decoration: none;
+  margin-bottom: 25px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid var(--dark);
+  box-shadow: 2px 2px 0 0 var(--dark);
+  transition: all 0.15s ease;
+}
+
+.back-link:hover {
+  background: var(--dark);
+  color: white;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 0 var(--dark);
+}
+
+.exercise-page h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+.exercise-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.btn-abrir, .btn-comprobar {
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  background: var(--dark);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid var(--dark);
+  box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+  letter-spacing: 0.5px;
+  transition: all 0.15s ease;
+}
+
+.btn-abrir:hover, .btn-comprobar:hover {
+  background: #4527a0;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+}
+
+.btn-abrir:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
+}
+
+#play {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#enter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  display: none;
+}
+
+.input {
+  width: 100%;
+  padding: .5em;
+  margin-right: 1em;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid var(--dark);
+  box-shadow: 2px 2px 0 0 var(--dark);
+  transition: all 0.15s ease;
+}
+
+.box-comprobar {
+  display: flex;
+}
+
+#tablas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1rem; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .exercise-page { padding: 20px; }
+  .exercise-page h1 { font-size: 0.9rem; }
+  .seccion-nombre { font-size: 0.8rem; }
+}
