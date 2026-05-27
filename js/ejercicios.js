@@ -146,6 +146,12 @@ const secciones = [
         titulo: 'Área',
         descripcion: 'Calcula el área de un rectangulo, solicita al usuario el ancho y la altura',
         carpeta: '19-area'
+      },
+      {
+        id: '20',
+        titulo: 'Coste de Hotel',
+        descripcion: 'Calcula el precio de un hotel según el número de noches que introduce el usuario',
+        carpeta: '20-coste-hotel'
       }
     ]
   }
