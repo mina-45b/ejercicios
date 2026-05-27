@@ -138,8 +138,14 @@ const secciones = [
       {
         id: '18',
         titulo: 'Multiplicacion',
-        descripcion: 'Genera divs aleatorios y los muestra segun un código de color',
-        carpeta: '16-divs-aleatorios'
+        descripcion: 'Solicita un número al usuario y lo multiplica por 10',
+        carpeta: '18-multiplicacion'
+      },
+      {
+        id: '19',
+        titulo: 'Área',
+        descripcion: 'Calcula el área de un rectangulo, solicita al usuario el ancho y la altura',
+        carpeta: '19-area'
       }
     ]
   }
