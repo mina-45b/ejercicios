@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>#21 Coste de Hotel V2</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <div id="content" class="exercise-page">
+            <a href="../" class="back-link">← Volver</a>
+            <h1>RESULTADO</h1>
+
+            <form id="form-hotel">
+                <div class="form-group">
+                    <label for="noches">Número de noches</label>
+                    <input type="number" id="noches" class="input" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" class="input" required>
+                        <option value="paris">París</option>
+                        <option value="boston">Boston</option>
+                        <option value="londres">Londres</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dias">Días de alquiler de coche</label>
+                    <input type="number" id="dias" class="input" min="0" value="0" required>
+                </div>
+
+                <input type="button" class="btn-abrir" id="btn-calcular" value="CALCULAR PRECIO"></input>
+            </form>
+
+            <div id="resultado">
+                <hr>
+                <p>Hotel: <strong id="precio-hotel">0</strong>€</p>
+                <p>Vuelo: <strong id="precio-vuelo">0</strong>€</p>
+                <p>Coche: <strong id="precio-coche">0</strong>€ <strong id='descuento'></strong></p>
+                <hr>
+                <p><strong>PRECIO TOTAL: <span id="precio-total">0</span>€</strong></p>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
