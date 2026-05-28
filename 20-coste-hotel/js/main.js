@@ -92,6 +92,17 @@ function pedirDias() {
     return numDias;
 }
 
+function costeViaje(noches, ciudad, diasAlquiler) {
+
+    const precioHotel = costeHotel(noches);
+    const precioAvion = costeAvion(ciudad);
+    const precioCoche = costeCoche(diasAlquiler);
+
+    let precioFinal = precioHotel + precioAvion + precioCoche;
+
+    return precioFinal;
+}
+
 
 function iniciar() {
 
@@ -101,6 +112,8 @@ function iniciar() {
     const precioAvion = document.getElementById('precio-avion');
     const numDias = document.getElementById('dias');
     const precioAlquiler = document.getElementById('precio-alquiler');
+
+    const precioTotal = document.getElementById('precio-total');
 
     let noches = pedirNoches();
     let coste = costeHotel(noches);
@@ -126,6 +139,12 @@ function iniciar() {
     precioAlquiler.textContent = total;
 
     alert(`Por ${dias} días de alquier de coche el precio total es de ${total}€`)
+
+    let precioViaje = costeViaje(noches, ciudad, dias);
+
+    precioTotal.textContent = precioViaje;
+
+    alert(`El costo total del viaje es de ${precioViaje}€`);
 
 }
 

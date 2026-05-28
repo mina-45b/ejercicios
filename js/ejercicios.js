@@ -150,7 +150,7 @@ const secciones = [
       {
         id: '20',
         titulo: 'Coste de Hotel',
-        descripcion: 'Calcula el precio de un hotel según el número de noches que este, el coste del avión de acuerdo a la ciudad a la que se dirija, el precio del coche por los días alquilados',
+        descripcion: 'Calcula el precio de un hotel según el número de noches que este, el coste del avión de acuerdo a la ciudad a la que se dirija, el precio del coche por los días alquilados y presenta el precio total del viaje',
         carpeta: '20-coste-hotel'
       }
     ]
