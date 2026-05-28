@@ -315,6 +315,73 @@ footer {
   flex-wrap: wrap;
 }
 
+#form-hotel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group .input {
+  font-size: 0.9rem;
+}
+
+
+.form-group label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+#form-hotel .input {
+  width: 100%;
+  margin-right: 0;
+}
+
+#form-hotel select.input {
+  appearance: none;
+  background: white;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 10px;
+}
+
+#resultado hr {
+  border: 2px dashed var(--lavender);
+  margin: 12px 0;
+}
+
+#resultado p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+#resultado strong {
+  color: var(--dark);
+}
+
+#resultado #descuento {
+  color: var(--pink);
+}
+
+#precio-total {
+  font-size: 1.3rem;
+  color: var(--pink);
+}
+
+#btn-calcular {
+  width: 100%;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   header h1 { font-size: 1rem; }
   .cards-grid { grid-template-columns: 1fr; }

@@ -152,7 +152,14 @@ const secciones = [
         titulo: 'Coste de Hotel',
         descripcion: 'Calcula el precio de un hotel según el número de noches que este, el coste del avión de acuerdo a la ciudad a la que se dirija, el precio del coche por los días alquilados y presenta el precio total del viaje',
         carpeta: '20-coste-hotel'
+      },
+      {
+        id: '21',
+        titulo: 'Coste de Hotel V2',
+        descripcion: 'Calcula el precio de un hotel según el número de noches que este, el coste del avión de acuerdo a la ciudad a la que se dirija, el precio del coche por los días alquilados y presenta el precio total del viaje',
+        carpeta: '21-coste-hotel-v2'
       }
+
     ]
   }
 ];

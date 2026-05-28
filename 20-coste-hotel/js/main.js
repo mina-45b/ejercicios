@@ -70,6 +70,8 @@ function costeCoche(diasAlquiler) {
     } else if(diasAlquiler >= 3) {
         precioTotal = precioCalculado - 20;
         console.log(precioTotal + "mas de 3 dias");
+    } else {
+        return precioCalculado;
     }
 
     return precioTotal;
