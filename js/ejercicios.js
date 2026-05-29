@@ -158,6 +158,12 @@ const secciones = [
         titulo: 'Coste de Hotel V2',
         descripcion: 'Calcula el precio de un hotel según el número de noches que este, el coste del avión de acuerdo a la ciudad a la que se dirija, el precio del coche por los días alquilados y presenta el precio total del viaje',
         carpeta: '21-coste-hotel-v2'
+      },
+      {
+        id: '22',
+        titulo: 'Puerta Correcta',
+        descripcion: 'Genera un número aleatoreo entre 1 y 2 que correspondra a una puerta, si el usuario adivina el número gana',
+        carpeta: '22-puerta-correcta'
       }
 
     ]

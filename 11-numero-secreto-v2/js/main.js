@@ -25,7 +25,7 @@ function juego(ronda) {
         alert("Correcto, el numero secreto es: " + numeroSecreto);
 
 
-        strong.style.color = 'green';
+        strong.style.color = 'var(--mint)';
         strong.textContent = "¡HAS GANADO!";
         break;
        }
@@ -33,7 +33,7 @@ function juego(ronda) {
        if(intentos == 1) {
         alert("Lo siento, el numero secreto es: " + numeroSecreto);
 
-        strong.style.color = 'red';
+        strong.style.color = 'var(--pink)';
         strong.textContent = "¡HAS PERDIDO!";
         console.log(intentos);
        }
