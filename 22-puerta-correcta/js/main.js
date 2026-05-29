@@ -42,6 +42,7 @@ function repetirJuego() {
     entradas.textContent =`HAS ENTRADO EN ${puertasAcertadas} PUERTAS`;
     entradas.style.textAlign = "center";
     document.getElementById('content').appendChild(entradas);
+
 }
 
 function jugar() {
@@ -49,6 +50,12 @@ function jugar() {
     const textoPuerta = document.createElement('p');
     const textoEleccion = document.createElement('p');
     const textoDestiono = document.createElement('p');
+    
+    const hr = document.createElement('hr');
+
+    hr.style.border = '2px dashed var(--lavender)';
+    hr.style.margin = '1em 1em';
+
 
     textoPuerta.textContent = "Has elegido la puerta nº ";
     textoEleccion.textContent = "La puerta correcta es la nº ";
@@ -88,12 +95,35 @@ function jugar() {
     document.getElementById('content').appendChild(textoPuerta);
     document.getElementById('content').appendChild(textoEleccion);
     document.getElementById('content').appendChild(textoDestiono);
-    document.getElementById('content').appendChild(document.createElement('hr'));
-    document.getElementById('content').appendChild(document.createElement('br'));
+    document.getElementById('content').appendChild(hr);
 
     return vive; 
 }
 
-repetirJuego();
+function iniciarJuego() {
+    let seguirJugando = true;
+    partidas = 0;
+
+
+
+    while(seguirJugando){
+        partidas++;
+        const partida = document.createElement('p');
+
+        partida.style.textAlign = "center";
+        partida.style.fontWeight = "bold";
+        partida.textContent =`PARTIDA ${partidas}`;
+
+        document.getElementById('content').appendChild(partida);
+        
+        repetirJuego();
+
+        seguirJugando = confirm("¿Quieres seguir jugando?");
+    }
+
+}
+
+iniciarJuego();
+
 
 
