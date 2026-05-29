@@ -1,4 +1,4 @@
-let numero = function() {
+const numero = function() {
     let numero = Math.floor(Math.random() * 2)+1;
     return numero;
 }
@@ -23,18 +23,45 @@ function pedirNumero() {
 
 function comprobarNumero() {
     let numeroUsuario = pedirNumero();
+    let vive = true;
+    let destino = "";
 
-    if(numeroUsuario === numero()) {
+    const aleatorio = numero();
+
+    if(numeroUsuario === aleatorio) {
         alert("Correcto, puedes entrar");
-        return true;
+        destino = "entrado";
+        vive = true;
     } else {
         alert("Ohh!, has muerto");
-        return false;
+        destino = "muerto";
+        vive = false;
     }
+
+    //Retornar una expresion de funcion en un objeto aleatorio : numero()
+    return {vive, numeroUsuario, destino, aleatorio}
 }
 
 function iniciar() {
+
+    const numPuerta = document.getElementById('numero');
+    const correcta = document.getElementById('correcta');
+    const destino = document.getElementById('destino');
+
     let resultado = comprobarNumero();
+
+    numPuerta.textContent = resultado.numeroUsuario;
+    console.log(`puerta usuario ${resultado.numeroUsuario}`);
+    correcta.textContent = resultado.aleatorio;
+    console.log(`puerta correcta ${resultado.aleatorio}`);
+    correcta.style.color = 'var(--mint)';
+
+    destino.textContent = resultado.destino;
+    if(resultado.destino == "muerto") {
+        destino.style.color = 'var(--pink)';
+    } else {
+        destino.style.color = 'var(--mint)';
+    }
 }
 
 iniciar();

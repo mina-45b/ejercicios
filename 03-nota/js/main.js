@@ -9,17 +9,17 @@ div.appendChild(strong);
 
 if (notaUsuario < 0 || notaUsuario > 10) {
     strong.textContent = "Nota no válida"
-    strong.style.color = "gray"
+    strong.style.color = "var(--lavender)"
 } else if (notaUsuario == 10) {
     strong.textContent = "Matricula de honor"
-    strong.style.color = "gold"
+    strong.style.color = "var(--yellow)"
 } else if (notaUsuario > 5) {
     strong.textContent = "Aprobado"
-    strong.style.color = "green"
+    strong.style.color = "var(--mint)"
 } else if (notaUsuario == 5) {
     strong.textContent = "Por los pelos"
-    strong.style.color = "orange"
+    strong.style.color = "var(--sky)"
 } else if (notaUsuario < 5) {
     strong.textContent = "Suspenso"
-    strong.style.color = "red"
+    strong.style.color = "var(--pink)"
 }
