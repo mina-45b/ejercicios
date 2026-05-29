@@ -21,47 +21,79 @@ function pedirNumero() {
     return numeroEscogido;
 }
 
-function comprobarNumero() {
-    let numeroUsuario = pedirNumero();
-    let vive = true;
-    let destino = "";
 
+function repetirJuego() {
+    let puertasAcertadas = 0;
+    let vive = true;
+    
+
+    while(vive) {
+
+        vive = jugar();
+
+        if(vive) {
+            puertasAcertadas ++;
+        } 
+    }
+
+    alert(`Has entrado en ${puertasAcertadas} puertas`)
+    const entradas = document.createElement('p');
+
+    entradas.textContent =`HAS ENTRADO EN ${puertasAcertadas} PUERTAS`;
+    entradas.style.textAlign = "center";
+    document.getElementById('content').appendChild(entradas);
+}
+
+function jugar() {
+
+    const textoPuerta = document.createElement('p');
+    const textoEleccion = document.createElement('p');
+    const textoDestiono = document.createElement('p');
+
+    textoPuerta.textContent = "Has elegido la puerta nº ";
+    textoEleccion.textContent = "La puerta correcta es la nº ";
+    textoDestiono.textContent = "Tu has ";
+
+    const numPuerta = document.createElement('strong');
+    const correcta = document.createElement('strong');
+    const destino = document.createElement('strong');
+
+    let numeroUsuario = pedirNumero();
     const aleatorio = numero();
+
+    let vive = true;
 
     if(numeroUsuario === aleatorio) {
         alert("Correcto, puedes entrar");
-        destino = "entrado";
+        destino.textContent = "entrado";
         vive = true;
     } else {
         alert("Ohh!, has muerto");
-        destino = "muerto";
+        destino.textContent = "muerto";
         vive = false;
     }
 
-    //Retornar una expresion de funcion en un objeto aleatorio : numero()
-    return {vive, numeroUsuario, destino, aleatorio}
-}
-
-function iniciar() {
-
-    const numPuerta = document.getElementById('numero');
-    const correcta = document.getElementById('correcta');
-    const destino = document.getElementById('destino');
-
-    let resultado = comprobarNumero();
-
-    numPuerta.textContent = resultado.numeroUsuario;
-    console.log(`puerta usuario ${resultado.numeroUsuario}`);
-    correcta.textContent = resultado.aleatorio;
-    console.log(`puerta correcta ${resultado.aleatorio}`);
+    numPuerta.textContent = numeroUsuario;
+    console.log(`puerta usuario ${numeroUsuario}`);
+    correcta.textContent = aleatorio;
+    console.log(`puerta correcta ${aleatorio}`);
     correcta.style.color = 'var(--mint)';
 
-    destino.textContent = resultado.destino;
-    if(resultado.destino == "muerto") {
-        destino.style.color = 'var(--pink)';
-    } else {
-        destino.style.color = 'var(--mint)';
-    }
+    destino.style.color = vive == true ? 'var(--mint)' : 'var(--pink)';
+
+    textoPuerta.appendChild(numPuerta);
+    textoEleccion.appendChild(correcta);
+    textoDestiono.appendChild(destino);
+
+    document.getElementById('content').appendChild(textoPuerta);
+    document.getElementById('content').appendChild(textoEleccion);
+    document.getElementById('content').appendChild(textoDestiono);
+    document.getElementById('content').appendChild(document.createElement('hr'));
+    document.getElementById('content').appendChild(document.createElement('br'));
+
+    return vive; 
 }
 
-iniciar();
+repetirJuego();
+
+
