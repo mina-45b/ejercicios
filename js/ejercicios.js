@@ -110,6 +110,12 @@ const secciones = [
         titulo: 'Número Secreto V2',
         descripcion: 'El usuario debe adivinar un número',
         carpeta: '11-numero-secreto-v2'
+      },
+      {
+        id: '23',
+        titulo: 'Puerta Correcta V2',
+        descripcion: 'Genera un número aleatoreo entre 1 y 2 que correspondra a una puerta, si el usuario adivina el número gana',
+        carpeta: '23-puerta-correcta-v2'
       }
     ]
   },
@@ -166,10 +172,10 @@ const secciones = [
         carpeta: '22-puerta-correcta'
       },
       {
-        id: '23',
-        titulo: 'Puerta Correcta V2',
-        descripcion: 'Genera un número aleatoreo entre 1 y 2 que correspondra a una puerta, si el usuario adivina el número gana',
-        carpeta: '23-puerta-correcta-v2'
+        id: '24',
+        titulo: 'Cinco Nombres y Edades',
+        descripcion: 'Crea un arry con cinco nombres de personas y los recorre mostrando el texto "Conozco a alguien llamando", además con otro array muestra el doble de la edad de la persona',
+        carpeta: '24-cinco-nombres-edades'
       }
 
     ]
