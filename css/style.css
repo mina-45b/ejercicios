@@ -420,6 +420,23 @@ footer {
   animation:  flotar 3s ease-in-out infinite;
 }
 
+.pregunta {
+  display: none;
+  text-align: center;
+}
+
+.botones {
+  margin: 1em;
+}
+
+.botones .btn {
+  margin: 1em;
+}
+
+#abiertas {
+  text-align: right;
+}
+
 @keyframes flotar {
   0%, 100% {
     transform: translateY(0);
