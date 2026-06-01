@@ -164,6 +164,12 @@ const secciones = [
         titulo: 'Puerta Correcta',
         descripcion: 'Genera un número aleatoreo entre 1 y 2 que correspondra a una puerta, si el usuario adivina el número gana',
         carpeta: '22-puerta-correcta'
+      },
+      {
+        id: '23',
+        titulo: 'Puerta Correcta V2',
+        descripcion: 'Genera un número aleatoreo entre 1 y 2 que correspondra a una puerta, si el usuario adivina el número gana',
+        carpeta: '23-puerta-correcta-v2'
       }
 
     ]

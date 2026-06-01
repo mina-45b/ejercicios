@@ -382,6 +382,71 @@ footer {
   cursor: pointer;
 }
 
+.puertas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2em 0;
+}
+
+.puertas-nueva{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2em auto;
+  width: 50%;
+}
+
+
+.puerta {
+  width: 100%;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.puerta:hover {
+  transform:  scale(1.1);
+  z-index: 10;
+}
+
+.puerta h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  margin: .5em;
+  text-align: center;
+}
+
+.puerta img{
+  width: 100%;
+  padding: 1em;
+  animation:  flotar 3s ease-in-out infinite;
+}
+
+.pregunta {
+  display: none;
+  text-align: center;
+}
+
+.botones {
+  margin: 1em;
+}
+
+.botones .btn {
+  margin: 1em;
+}
+
+#abiertas {
+  text-align: right;
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  } 50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
 @media (max-width: 600px) {
   header h1 { font-size: 1rem; }
   .cards-grid { grid-template-columns: 1fr; }
