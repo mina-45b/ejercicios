@@ -449,6 +449,81 @@ footer {
   margin: 1em;
 }
 
+.contendor-lista-v2 {
+  background: white;
+  padding: 25px 20px 20px;
+}
+.contendor-lista-v2 h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.75rem;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 1.5em;
+  padding-bottom: 12px;
+}
+.lista-compra-v2 {
+  list-style: none;
+  padding: 0;
+}
+.lista-compra-v2 li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  text-transform: capitalize;
+  color: var(--dark);
+  padding: 12px 10px;
+  border-bottom: 2px dashed rgba(179, 136, 255, 0.3);
+  transition: background 0.15s ease;
+  padding-left: 16px;
+}
+.lista-compra-v2 li:last-child {
+  border-bottom: none;
+}
+.lista-compra-v2 li:hover {
+  background: #f8f6ff;
+}
+.lista-compra-v2 li:nth-of-type(1) { border-left: 4px solid var(--pink); }
+.lista-compra-v2 li:nth-of-type(2) { border-left: 4px solid var(--mint); }
+.lista-compra-v2 li:nth-of-type(3) { border-left: 4px solid var(--lavender); }
+.lista-compra-v2 li:nth-of-type(4) { border-left: 4px solid var(--yellow); }
+.lista-compra-v2 li:nth-of-type(5) { border-left: 4px solid var(--sky); }
+
+.lista-compra-v2 li input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--dark);
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 0 var(--dark);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: white;
+  position: relative;
+}
+.lista-compra-v2 li input[type="checkbox"]:checked {
+  background: var(--mint);
+  border-color: var(--mint);
+  box-shadow: 1px 1px 0 0 var(--mint);
+  transform: translate(1px, 1px);
+}
+.lista-compra-v2 li input[type="checkbox"]:checked::after {
+  content: '✓';
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes flotar {
   0%, 100% {
     transform: translateY(0);
