@@ -514,6 +514,13 @@ footer {
   box-shadow: 1px 1px 0 0 var(--mint);
   transform: translate(1px, 1px);
 }
+
+.lista-compra-v2 li .articulo:checked + .mi-articulo {
+  text-decoration: line-through;
+  color: var(--lavender);
+  transition: all 0.3s ease;
+}
+
 .lista-compra-v2 li input[type="checkbox"]:checked::after {
   content: '✓';
   font-size: 14px;
