@@ -437,6 +437,18 @@ footer {
   text-align: right;
 }
 
+.contendor-lista {
+  width: 50%;
+  margin: auto;
+}
+
+.lista-compra li{
+  font-weight: bold;
+  list-style: square;
+  text-transform: capitalize;
+  margin: 1em;
+}
+
 @keyframes flotar {
   0%, 100% {
     transform: translateY(0);

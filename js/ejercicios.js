@@ -192,7 +192,7 @@ const secciones = [
       },
       {
         id: '26',
-        titulo: 'Lista de la Compran',
+        titulo: 'Lista de la Compra',
         descripcion: 'Solicita al usuario 5 artículos y los muestra por pantalla',
         carpeta: '26-lista-compra'
       }
