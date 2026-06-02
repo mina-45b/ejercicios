@@ -179,7 +179,19 @@ const secciones = [
       }
 
     ]
-  }
+  },
+  {
+    nombre: 'Array',
+    color: 'var(--mint)',
+    ejercicios: [
+      {
+        id: '25',
+        titulo: '10 Números',
+        descripcion: 'Almacena 10 números introducidos por el usuarioi y los muestra ordenamente',
+        carpeta: '25-10-numeros'
+      }
+    ]
+  },
 ];
 
 function limpiarScriptsEjercicio() {
