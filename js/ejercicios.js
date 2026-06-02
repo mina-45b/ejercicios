@@ -189,6 +189,12 @@ const secciones = [
         titulo: '10 Números',
         descripcion: 'Almacena 10 números introducidos por el usuarioi y los muestra ordenamente',
         carpeta: '25-10-numeros'
+      },
+      {
+        id: '26',
+        titulo: 'Lista de la Compra',
+        descripcion: 'Solicita al usuario 5 artículos y los muestra por pantalla',
+        carpeta: '26-lista-compra'
       }
     ]
   },
