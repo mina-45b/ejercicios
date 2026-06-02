@@ -195,6 +195,12 @@ const secciones = [
         titulo: 'Lista de la Compra',
         descripcion: 'Solicita al usuario 5 artículos y los muestra por pantalla',
         carpeta: '26-lista-compra'
+      },
+      {
+        id: '27',
+        titulo: 'Lista de la Compra V2',
+        descripcion: 'Solicita al usuario 5 artículos y los muestra por pantalla',
+        carpeta: '27-lista-compra-v2'
       }
     ]
   },
