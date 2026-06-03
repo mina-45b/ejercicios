@@ -440,6 +440,15 @@ footer {
   resize: vertical;
 }
 
+.obligatorio {
+  color: var(--pink);
+}
+
+#form-pedido label.obligatorio::after{
+    content: " *";
+    color: var(--pink);
+}
+
 .puertas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
