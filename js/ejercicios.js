@@ -207,7 +207,21 @@ const secciones = [
         titulo: 'Números Aleatorios',
         descripcion: 'Guarda un array de 10 números aleatorios del 1 al 100',
         carpeta: '28-numeros-aleatorios'
-      }
+      },
+
+    ]
+  },
+  {
+    nombre: 'Formularios',
+    color: 'var(--lavander)',
+    ejercicios: [
+      {
+        id: '29',
+        titulo: 'Formulario Pedido',
+        descripcion: 'Formulario que calcula el precio de un pedido de acuerdo a las opciones marcadas',
+        carpeta: '29-formulario-pedido'
+      },
+      
     ]
   },
 ];

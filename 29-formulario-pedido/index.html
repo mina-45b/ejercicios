@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>#29 Formulario Pedido</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <div id="content" class="exercise-page">
+            <a href="../" class="back-link">← Volver</a>
+            <h1>RESULTADO</h1>
+
+            <form id="form-pedido">
+                <div class="form-group">
+                    <label class="obligatorio" for="nombre">Nombre del cliente </label>
+                    <input type="text" id="nombre" class="input" placeholder="Ej: David" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="material">Material de la caja</label>
+                    <select id="material" class="input" required>
+                        <option value="plastico">Plástico: 5€</option>
+                        <option value="madera">Madera: 10€</option>
+                        <option value="aluminio">Aluminio: 20€</option>
+                        <option value="acero">Acero: 25€</option>
+                        <option value="platino">Platino: 200€</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Dimensiones de la caja</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="dimension" value="pequena" checked>
+                            Pequeña +0€
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="dimension" value="mediana">
+                            Mediana +20€
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="dimension" value="grande">
+                            Grande +50€
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" class="input" placeholder="Alguna nota adicional..."></textarea>
+                </div>
+
+                <input type="button" class="btn-abrir" id="btn-calcular" value="CALCULAR PRECIO">
+            </form>
+
+            <div id="resultado">
+                <h3>RESUMEN</h3>
+                <hr>
+                <p>Cliente: <strong id="res-cliente">—</strong></p>
+                <p>Material: <strong id="res-material">—</strong></p>
+                <p>Dimensión: <strong id="res-dimension">—</strong></p>
+                <p>Comentario: <strong id="res-comentario">—</strong></p>
+                <hr>
+                <p><strong>PRECIO TOTAL: <span id="precio-total">0</span>€</strong></p>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
