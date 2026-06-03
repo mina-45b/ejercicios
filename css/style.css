@@ -382,6 +382,64 @@ footer {
   cursor: pointer;
 }
 
+.form-group{
+  margin: 1em 0;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: var(--dark);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid var(--dark);
+  box-shadow: 2px 2px 0 0 var(--dark);
+  transition: all 0.15s ease;
+  background: white;
+}
+
+.radio-label:hover {
+  background: #f8f6ff;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 0 var(--dark);
+}
+
+.radio-label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--dark);
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 0 var(--dark);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  background: white;
+  flex-shrink: 0;
+}
+
+.radio-label input[type="radio"]:checked {
+  background: var(--mint);
+  border-color: var(--mint);
+  box-shadow: 1px 1px 0 0 var(--mint);
+  transform: translate(1px, 1px);
+}
+
+#comentario {
+  resize: vertical;
+}
+
 .puertas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
