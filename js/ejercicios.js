@@ -201,6 +201,12 @@ const secciones = [
         titulo: 'Lista de la Compra V2',
         descripcion: 'Solicita al usuario 5 artículos y los muestra por pantalla',
         carpeta: '27-lista-compra-v2'
+      },
+      {
+        id: '28',
+        titulo: 'Números Aleatorios',
+        descripcion: 'Guarda un array de 10 números aleatorios del 1 al 100',
+        carpeta: '28-numeros-aleatorios'
       }
     ]
   },

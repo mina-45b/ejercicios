@@ -33,7 +33,7 @@ let textoNumeros = document.createElement('p');
 
 textoNumeros.textContent = "Los números en orden ascendente son:"
 
-numerosOrdenados.textContent = lista.sort().join(', ');
+numerosOrdenados.textContent = lista.sort((a, b) => a - b).join(', ');
 console.log(lista.sort());
 
 document.getElementById('content').appendChild(textoNumeros);
