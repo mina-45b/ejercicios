@@ -208,7 +208,12 @@ const secciones = [
         descripcion: 'Guarda un array de 10 números aleatorios del 1 al 100',
         carpeta: '28-numeros-aleatorios'
       },
-
+      {
+        id: '30',
+        titulo: 'Mini Hoja de Cálculo',
+        descripcion: 'Muestra una mini hoja de cálculo de 4 filas y 4 columnas dados por el usuario',
+        carpeta: '30-mini-hoja-calculo'
+      }
     ]
   },
   {
