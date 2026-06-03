@@ -531,6 +531,19 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.numeros-contendor {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.numero {
+  margin: 1em;
+}
+
 @keyframes flotar {
   0%, 100% {
     transform: translateY(0);
