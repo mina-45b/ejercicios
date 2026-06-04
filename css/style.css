@@ -647,8 +647,7 @@ footer {
 .sp-cell.col-header[data-col="A"] { background: var(--pink); }
 .sp-cell.col-header[data-col="B"] { background: var(--mint); }
 .sp-cell.col-header[data-col="C"] { background: var(--lavender); }
-.sp-cell.col-header[data-col="D"] { background: var(--yellow); color: var(--dark); }
-.sp-cell.col-header[data-col="E"] { background: var(--sky); color: var(--dark); }
+.sp-cell.col-header[data-col="D"] { background: var(--yellow); color: var(--dark);  }
 
 .sp-cell.row-header {
   font-family: 'Press Start 2P', monospace;
