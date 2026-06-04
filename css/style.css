@@ -611,6 +611,61 @@ footer {
   margin: 1em;
 }
 
+.contenedor-hoja {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.spreadsheet {
+  display: grid;
+  grid-template-columns: 40px repeat(4, 1fr);
+  border: 2px solid var(--dark);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 0 var(--dark);
+}
+
+.sp-cell {
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  min-height: 36px;
+  font-size: 0.85rem;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.sp-cell.col-header {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: white;
+  justify-content: center;
+  padding: 12px 4px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.sp-cell.col-header[data-col="A"] { background: var(--pink); }
+.sp-cell.col-header[data-col="B"] { background: var(--mint); }
+.sp-cell.col-header[data-col="C"] { background: var(--lavender); }
+.sp-cell.col-header[data-col="D"] { background: var(--yellow); color: var(--dark); }
+.sp-cell.col-header[data-col="E"] { background: var(--sky); color: var(--dark); }
+
+.sp-cell.row-header {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: var(--dark);
+  justify-content: center;
+  background: #f0ecf5;
+  font-weight: 600;
+  border: 1px solid #d8d0e5;
+}
+
+@media (max-width: 600px) {
+  .sp-cell { font-size: 0.75rem; padding: 4px; min-height: 28px; }
+  .sp-cell.col-header { font-size: 0.4rem; padding: 8px 2px; }
+  .sp-cell.row-header { font-size: 0.4rem; }
+}
+
 @keyframes flotar {
   0%, 100% {
     transform: translateY(0);
