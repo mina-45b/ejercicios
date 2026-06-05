@@ -644,6 +644,7 @@ footer {
   border: 1px solid rgba(255,255,255,0.15);
 }
 
+.sp-cell.col-header[data-col="0"] { background: var(--dark); }
 .sp-cell.col-header[data-col="A"] { background: var(--pink); }
 .sp-cell.col-header[data-col="B"] { background: var(--mint); }
 .sp-cell.col-header[data-col="C"] { background: var(--lavender); }
