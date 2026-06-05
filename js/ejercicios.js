@@ -116,6 +116,12 @@ const secciones = [
         titulo: 'Puerta Correcta V2',
         descripcion: 'Genera un número aleatoreo entre 1 y 2 que correspondra a una puerta, si el usuario adivina el número gana',
         carpeta: '23-puerta-correcta-v2'
+      },
+      {
+        id: '31',
+        titulo: 'Mini Hoja de Cálculo V2',
+        descripcion: 'Muestra una mini hoja de cálculo de 4 filas y 4 columnas dados por el usuario',
+        carpeta: '31-mini-hoja-calculo-v2'
       }
     ]
   },
