@@ -628,11 +628,18 @@ footer {
 .sp-cell {
   border: 1px solid #d0d0d0;
   padding: 8px;
+  width: 100%;
   min-height: 36px;
   font-size: 0.85rem;
   background: white;
   display: flex;
   align-items: center;
+}
+
+input:disabled {
+  background-color: #f0ecf5;
+  cursor: not-allowed;
+
 }
 
 .sp-cell.col-header {
