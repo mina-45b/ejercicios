@@ -1,0 +1,21 @@
+#form-hotel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+#form-hotel .input {
+  width: 100%;
+  margin-right: 0;
+}
+
+#form-hotel select.input {
+  appearance: none;
+  background: white;
+  cursor: pointer;
+}
+
+#resultado #descuento {
+  color: var(--pink);
+}

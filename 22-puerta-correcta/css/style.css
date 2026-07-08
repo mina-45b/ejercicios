@@ -1,0 +1,34 @@
+.puertas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2em 0;
+}
+
+.puerta {
+  width: 100%;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.puerta:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.puerta h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  margin: .5em;
+  text-align: center;
+}
+
+.puerta img {
+  width: 100%;
+  padding: 1em;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

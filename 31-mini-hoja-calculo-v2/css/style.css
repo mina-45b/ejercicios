@@ -1,0 +1,88 @@
+.spreadsheet {
+  display: grid;
+  grid-template-columns: 40px repeat(4, 1fr);
+  border: 2px solid var(--dark);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 0 var(--dark);
+}
+
+.total {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid var(--dark);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 0 var(--dark);
+  margin: 1em 0;
+}
+
+.celda-total {
+  text-align: center;
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.sp-cell {
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  width: 100%;
+  min-height: 36px;
+  font-size: 0.85rem;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  justify-content: center;
+}
+
+.calcular {
+  display: inline-block;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: var(--dark);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid var(--dark);
+  box-shadow: 2px 2px 0 0 var(--dark);
+  transition: all 0.15s ease;
+}
+
+.sp-cell.col-header {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: white;
+  justify-content: center;
+  padding: 12px 4px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.sp-cell.col-header[data-col="0"] { background: var(--dark); }
+.sp-cell.col-header[data-col="A"] { background: var(--pink); }
+.sp-cell.col-header[data-col="B"] { background: var(--mint); }
+.sp-cell.col-header[data-col="C"] { background: var(--lavender); }
+.sp-cell.col-header[data-col="D"] { background: var(--yellow); }
+.sp-cell.col-header[data-col="E"] { background: var(--sky); color: var(--dark); }
+
+.sp-cell.row-header {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: var(--dark);
+  justify-content: center;
+  background: #f0ecf5;
+  font-weight: 600;
+  border: 1px solid #d8d0e5;
+}
+
+input:disabled {
+  background-color: #f0ecf5;
+}
+
+@media (max-width: 600px) {
+  .sp-cell { font-size: 0.75rem; padding: 4px; min-height: 28px; }
+  .sp-cell.col-header { font-size: 0.4rem; padding: 8px 2px; }
+  .sp-cell.row-header { font-size: 0.4rem; }
+}
