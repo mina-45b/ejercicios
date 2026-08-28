@@ -1,0 +1,22 @@
+@import url("../css/style.css");
+
+input[type="file"]::file-selector-button {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    background: var(--pink);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 12px;
+    align-self: flex-start;
+    border: 2px solid var(--dark);
+    box-shadow: 2px 2px 0 0 var(--dark);
+}
+
+input[type="file"]::file-selector-button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0 0 var(--dark);
+  }
+
+  
