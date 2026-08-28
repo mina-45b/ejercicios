@@ -182,6 +182,12 @@ const secciones = [
         titulo: 'Cinco Nombres y Edades',
         descripcion: 'Crea un arry con cinco nombres de personas y los recorre mostrando el texto "Conozco a alguien llamando", además con otro array muestra el doble de la edad de la persona',
         carpeta: '24-cinco-nombres-edades'
+      },
+      {
+        id: '32',
+        titulo: 'Diferencia Entre Fechas',
+        descripcion: 'Calcula los días que han pasado desde el día de tu cumpleaños hasta hoy',
+        carpeta: '32-diferencia-fechas'
       }
 
     ]
