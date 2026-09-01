@@ -1,0 +1,23 @@
+.conversor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#result
+{
+    width: 100%;
+    padding: .5em;
+    margin-right: 1em;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: var(--dark);
+    text-align: center;
+    display: none;
+}
+
+  
