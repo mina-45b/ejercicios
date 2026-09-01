@@ -188,6 +188,12 @@ const secciones = [
         titulo: 'Diferencia Entre Fechas',
         descripcion: 'Calcula los días que han pasado desde el día de tu cumpleaños hasta hoy',
         carpeta: '32-diferencia-fechas'
+      },
+      {
+        id: '33',
+        titulo: 'Extensión Archivo',
+        descripcion: 'Elimina la extensión de un archivo',
+        carpeta: '33-extension-archivo'
       }
 
     ]
