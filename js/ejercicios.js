@@ -191,9 +191,9 @@ const secciones = [
       },
       {
         id: '33',
-        titulo: 'Último Indice',
+        titulo: 'Extensión Archivo',
         descripcion: 'Elimina la extensión de un archivo',
-        carpeta: '33-ultimo-indice'
+        carpeta: '33-extension-archivo'
       }
 
     ]
