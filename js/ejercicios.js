@@ -247,6 +247,19 @@ const secciones = [
       
     ]
   },
+  {
+    nombre: 'Ejercicios Práctica',
+    color: 'var(--yellow)',
+    ejercicios: [
+      {
+        id: '34',
+        titulo: 'Pedir Palabra',
+        descripcion: 'Pide una palabra al usuario y la convierte en minúsculas sin acentos',
+        carpeta: '34-pedir-palabra'
+      },
+      
+    ]
+  }
 ];
 
 function limpiarScriptsEjercicio() {
