@@ -257,7 +257,12 @@ const secciones = [
         descripcion: 'Pide una palabra al usuario y la convierte en minúsculas sin acentos',
         carpeta: '34-pedir-palabra'
       },
-      
+      {
+        id: '35',
+        titulo: 'Letra Aleatoria',
+        descripcion: 'Pide el nombre del usuario y a partir de la longitud genera una letra aleatoria',
+        carpeta: '35-letra-aleatoria'
+      }
     ]
   }
 ];
