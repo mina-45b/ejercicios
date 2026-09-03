@@ -268,6 +268,12 @@ const secciones = [
         titulo: 'Ventana Emergente',
         descripcion: 'Dos botones disponibles, uno abre una ventana emergente y el otro la cierra',
         carpeta: '36-ventana-emergente'
+      },
+      {
+        id: '37',
+        titulo: 'Contador de Twitter',
+        descripcion: 'Cuenta los caracteres introducidos hasta llegar a 145',
+        carpeta: '37-contador-twitts'
       }
     ]
   }
