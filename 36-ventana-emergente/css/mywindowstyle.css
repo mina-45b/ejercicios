@@ -1,0 +1,71 @@
+@import "../../css/style.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    font-size: .8rem;
+    padding: 10px 10px;
+}
+
+.img-container {
+    width: 100%; 
+    flex: 1; 
+    min-height: 0;
+}
+
+.tools {
+    display: flex;
+    width: 100%;
+    border: 2px solid var(--dark);
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+}
+
+.img-space {
+    width: 100%;
+    border: 2px solid var(--dark);
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+}
+
+.img-space img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.elemento-principal {
+    display: flex;
+    flex-basis: 60%;
+    flex-shrink: 0;
+    justify-content: start;
+    align-items: center;
+}
+
+.elemento-secundario {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+    margin: .4em;
+}
+
+.elemento-secundario div {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: var(--lavender);
+    border: 2px solid var(--dark);
+    border-radius: 3px;
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+}
+

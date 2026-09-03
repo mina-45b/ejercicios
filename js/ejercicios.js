@@ -262,6 +262,12 @@ const secciones = [
         titulo: 'Letra Aleatoria',
         descripcion: 'Pide el nombre del usuario y a partir de la longitud genera una letra aleatoria',
         carpeta: '35-letra-aleatoria'
+      },
+      {
+        id: '36',
+        titulo: 'Ventana Emergente',
+        descripcion: 'Dos botones disponibles, uno abre una ventana emergente y el otro la cierra',
+        carpeta: '36-ventana-emergente'
       }
     ]
   }
