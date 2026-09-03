@@ -1,0 +1,97 @@
+@import url('../css/style.css');
+
+.chat-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--dark);
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.tools {
+    display: flex;
+    font-family: 'Press Start 2P', monospace;
+    font-size: .5rem;
+    padding: 0 .7rem 0 .7rem;
+    width: 100%;
+    border-bottom: 3px solid var(--dark);
+    background-color: var(--sky);
+}
+
+.elemento-principal {
+    width: 80%;
+}
+
+.elemento-secundario {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+}
+
+.elemento-secundario div {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: var(--lavender);
+    border: 2px solid var(--dark);
+    border-radius: 3px;
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+}
+
+.text-area {
+    display: flex;
+    width: 100%;
+    padding: .5em;
+    gap: 1rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.profile img {
+    background-color: var(--lavender);
+    border: 2px solid var(--dark);
+    border-radius: 3px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon p {
+    color: var(--dark);
+}
+
+.text {
+    width: 80%;
+}
+
+.text textarea {
+    width: 100%;
+    resize: none;
+    border: 2px solid var(--dark);
+    border-radius: 3px;
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+}
+
+.counter-area {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-right: 4em;
+}
+
+.btn {
+    margin: 1em;
+}
