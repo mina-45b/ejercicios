@@ -1,5 +1,5 @@
-var firstNumber;
-var secondNumber;
+var firstNumber = "";
+var secondNumber = "";
 let operator;
 var actualNumber = "";
 let result;
@@ -19,31 +19,31 @@ numbers.forEach(number => {
             newOperation = 0;
         }
         screen.insertAdjacentHTML('beforeend', `<span>${evento.target.value}</span>`);
-        console.log(`el numero acutal es ${actualNumber}`);
+        console.log(`el numero actual es ${actualNumber}`);
     });
 });
 
 operators.forEach(symbol => {
     symbol.addEventListener('click', (evento) => {
-        if(((evento.target.value == '-') && (!firstNumber && !secondNumber))) {
-            firstNumber = '-';
-        } else if(evento.target.value == '-' && operator == '-' && !secondNumber) {
-            secondNumber = '-';
+        if((evento.target.value == '-') && !actualNumber) {
+            actualNumber = '-';
         } else {
-            firstNumber += actualNumber;
+            firstNumber = actualNumber;
             operator = evento.target.value;
             actualNumber = "";
         }
-        
         screen.insertAdjacentHTML('beforeend', `<span>${evento.target.value}</span>`);
-        console.log(`El operador es ${evento.target.value}`);
+        console.log(`El operador es ${evento.target.value} y el primero numero es: ${firstNumber}`);
     });
 });
 
 equal.addEventListener('click', () => {
+    secondNumber = "";
     secondNumber += actualNumber;
+    console.log(`primer numero ${firstNumber}, segundo ${secondNumber}, operador ${operator}`);
     result = operacion(operator, Number(firstNumber), Number(secondNumber));
     actualNumber = "";
+    firstNumber = "";
     screen.innerHTML = `<strong>${result}</strong>`;
     newOperation = 1;
     console.log(`El resultado es: ${result}`);
