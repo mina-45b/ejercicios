@@ -1,0 +1,74 @@
+@import url('../css/style.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Press Start 2P', monospace;
+    font-size: .5rem;
+}
+
+.calculator {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 1.5em 3em 1.5em;
+    border: 2px solid var(--dark);
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 0 var(--dark);
+    background-color: var(--pink);
+}
+
+.calculator p {
+    color: var(--yellow);
+}
+
+.panel {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    height: 10em;
+    margin: 1em;
+    padding-right: 1em;
+    background-color: var(--mint);
+    border: 2px solid var(--dark);
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+}
+
+.panel span, strong {
+    font-size: 1rem;
+}
+
+.buttons {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1em;
+}
+
+.number:hover {
+    background: #ccbbff;
+}
+
+.number {
+    background: #ab7afe;
+    color: var(--dark);
+}
+
+#btn-clear {
+    margin: 1em;
+}
+

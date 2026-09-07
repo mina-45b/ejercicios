@@ -140,6 +140,12 @@ const secciones = [
         titulo: 'Divs Aleatorios V2',
         descripcion: 'Genera divs aleatorios y los muestra segun un código dinámicamente',
         carpeta: '17-divs-aleatorios-v2'
+      },
+      {
+        id: '38',
+        titulo: 'Calculadora',
+        descripcion: 'Calculadora que utiliza diferentes operadores aritméticos',
+        carpeta: '38-calculadora'
       }
     ]
   },
