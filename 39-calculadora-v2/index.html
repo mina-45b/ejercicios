@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#39 Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="content" class="exercise-page">
+        <a href="../" class="back-link">← Volver</a>
+        <h1>RESULTADO</h1>
+        <div class="calculator">
+          <div class="operations">
+            <input id="first-num" class="opera" type="text" placeholder="Primer Núm">
+            <select class="opera" name="symbols" id="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input id="second-num" class="opera" type="text" placeholder="Segundo Núm">
+            <p class="opera">=</p>
+            <input id="result" class="opera" type="text" disabled placeholder="Resultado">
+          </div>
+          <input type="button" id="calcular" class="btn-abrir" value="Calcular">
+        </div>
+    </div> 
+    <script src="js/main.js"></script>
+</body>
+</html>
