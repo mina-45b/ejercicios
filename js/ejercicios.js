@@ -146,6 +146,12 @@ const secciones = [
         titulo: 'Calculadora',
         descripcion: 'Calculadora que utiliza diferentes operadores aritméticos',
         carpeta: '38-calculadora'
+      },
+      {
+        id: '39',
+        titulo: 'Calculadora',
+        descripcion: 'Calculadora que utiliza diferentes operadores aritméticos versión 2',
+        carpeta: '39-calculadora-v2'
       }
     ]
   },

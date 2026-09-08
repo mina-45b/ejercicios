@@ -1,0 +1,37 @@
+@import url('../css/style.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5em;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--dark);
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+}
+
+.operations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em;
+    margin: .5em;
+}
+
+.operations p, .operations #result {
+    border: none !important;
+}
+
+.operations .opera {
+    text-align: center;
+    width: 15%;
+    border-radius: 10px;
+    border: 2px solid var(--lavender);
+}
